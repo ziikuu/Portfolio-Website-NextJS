@@ -13,8 +13,8 @@ const NavBar = () => {
         
         {NavLinks.map((link) => (
 
-          <Link key={link.label} href={link.label} className='hover:underline transition-all duration-300'>
-            <p>{link.name}</p>
+          <Link key={link.label} href={link.url} className='hover:underline'>
+            <p>{link.label}</p>
           </Link>
         ))}
         
