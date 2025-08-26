@@ -3,29 +3,30 @@ import { url } from "inspector";
 export const NavLinks = [
     {
         id: 1,
-        url: "/",
-        label: "Hero"
+        url: "#",
+        label: "",
+        name: "Home"
+    },
+
+    {
+        id: 2,
+        url: "#",
+        label: "About",
+        name: "About"
+    },
+
+    {
+        id: 3,
+        url: "#",
+        label: "Portfolio",
+        name: "Portfolio"
 
     },
 
     {
-        id: 1,
-        url: "/",
-        label: "About"
-
-    },
-
-    {
-        id: 1,
-        url: "/",
-        label: "Portfolio"
-
-    },
-
-    {
-        id: 1,
-        url: "/",
-        label: "Contact"
-
+        id: 4,
+        url: "#",
+        label: "Contact",
+        name: "Contact"
     },
 ]
