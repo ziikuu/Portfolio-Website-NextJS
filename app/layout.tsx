@@ -38,9 +38,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${ibmPlexSans.variable} ${sourceSerif4.variable} ${dmMono.variable} antialiased`}>
-      <body className="bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen font-[var(--font-IBM_Plex_Sans)]">
-        <ResponsiveNavBar />
-        {children}
+      <body className="bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen">
+        <div className="max-w-[1440px] mx-auto">
+          <ResponsiveNavBar />
+          {children}
+        </div>
       </body>
     </html>
   );
