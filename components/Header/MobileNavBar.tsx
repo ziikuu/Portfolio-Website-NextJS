@@ -10,7 +10,7 @@ type MobileNavBarProps = {
 const MobileNavBar = ({isMenuOpen, closeMenu}: MobileNavBarProps) => {
   return (
     <div className={`
-      bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen fixed inset-0 w-full h-screen z-[1001] flex justify-center items-center
+      md:hidden bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen fixed inset-0 w-full h-screen z-[1001] flex justify-center items-center
       transition-all duration-300 transform
       ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
     `}>
