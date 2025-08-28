@@ -21,7 +21,7 @@ const NavBar = () => {
       </div>
       {/* Hamburger Menu Icon for Mobile */}
       <div className='md:hidden'>
-        <button id='menuBtn' className='p-2 h-fit w-fit flex flex-col gap-1.5'>
+        <button id='menuBtn' className='p-2 h-fit w-fit flex flex-col gap-1'>
           <span className='h-[3px] w-8 bg-[#151419] rounded-2xl transition-all'></span>
           <span className='h-[3px] w-8 bg-[#151419] rounded-2xl transition-all'></span>
           <span className='h-[3px] w-8 bg-[#151419] rounded-2xl transition-all'></span>
