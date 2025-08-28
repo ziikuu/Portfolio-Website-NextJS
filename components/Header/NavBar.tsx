@@ -1,10 +1,15 @@
 import { NavLinks } from '@/constant/constant'
 import Link from 'next/link'
+import { ScriptProps } from 'next/script';
 import React from 'react'
 
-const NavBar = () => {
+type NavBarProps = {
+  openMenu: () => void;
+}
+
+const NavBar = ({ openMenu }: NavBarProps) => {
   return (
-    <div id="navContainer" className='sticky top-0 z-1000 flex items-center justify-between px-8 py-4 font-[DM_Mono] text-lg'>
+    <div id="navContainer" className='sticky top-0 z-1000 flex items-center justify-between px-4 py-4 font-[DM_Mono] text-lg'>
       {/* Logo or Brand Name */}
       <div className=''>
         <a href='/'><p>Computer Engineer</p></a>
@@ -19,14 +24,7 @@ const NavBar = () => {
           </Link>
         ))}
       </div>
-      {/* Hamburger Menu Icon for Mobile */}
-      <div className='md:hidden'>
-        <button id='menuBtn' className='p-2 h-fit w-fit flex flex-col gap-1'>
-          <span className='h-[3px] w-8 bg-[#151419] rounded-2xl transition-all'></span>
-          <span className='h-[3px] w-8 bg-[#151419] rounded-2xl transition-all'></span>
-          <span className='h-[3px] w-8 bg-[#151419] rounded-2xl transition-all'></span>
-        </button>
-      </div>
+      
     </div>
   )
 }
