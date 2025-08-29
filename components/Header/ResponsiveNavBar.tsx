@@ -12,7 +12,7 @@ const ResponsiveNavBar = () => {
   const hamburgerBottomStyle = isMenuOpen ? '-rotate-45 -translate-y-[9px]' : '';
 
   return (
-    <div>
+    <header className='fixed top-0 left-0 right-0 px-4 py-2 z-50 bg-transparent'>
       <div className='md:hidden'>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
@@ -25,7 +25,7 @@ const ResponsiveNavBar = () => {
       </div>
       <NavBar openMenu={() => setIsMenuOpen(true)} />
       <MobileNavBar isMenuOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
-    </div>
+    </header>
   )
 }
 

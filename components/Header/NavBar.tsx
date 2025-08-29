@@ -9,7 +9,7 @@ type NavBarProps = {
 
 const NavBar = ({ openMenu }: NavBarProps) => {
   return (
-    <div id="navContainer" className='sticky top-0 z-1000 flex items-center justify-between px-4 py-4 font-[DM_Mono] text-lg'>
+    <div id="navContainer" className='sticky top-0 z-1000 flex items-center justify-between font-[DM_Mono] text-lg'>
       {/* Logo or Brand Name */}
       <div className=''>
         <Link href='/'><p>Computer Engineer</p></Link>

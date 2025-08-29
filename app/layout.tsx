@@ -41,7 +41,7 @@ export default function RootLayout({
       <body className="bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen">
         <div className="">
           <ResponsiveNavBar />
-          {children}
+          <main className="">{children}</main>
         </div>
       </body>
     </html>
