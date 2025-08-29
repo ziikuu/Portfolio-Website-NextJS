@@ -17,11 +17,11 @@ const Hero = () => {
             <p className="text-[clamp(0.9rem,1.2vw,1.5rem)] max-w-full text-justify font-[DM_Mono] leading-relaxed">
               Full-stack developer in the making. Focused on web apps, automation, and creative problem-solving.
             </p>
-            
+            <Link href="/Portfolio" className=''>
               <button className="mt-4 px-8 py-3 bg-[#151419] text-white rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out">
-                <Link href="/Portfolio">See My Projects</Link>
+                See My Projects
               </button>
-            
+            </Link>
           </div>
         </div>
 
