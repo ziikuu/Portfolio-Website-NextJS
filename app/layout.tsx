@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Source_Serif_4, DM_Mono } from "next/font/google";
+import { IBM_Plex_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
 import ResponsiveNavBar from "@/components/Header/ResponsiveNavBar";
 

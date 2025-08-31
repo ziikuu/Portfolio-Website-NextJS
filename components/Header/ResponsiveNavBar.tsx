@@ -12,7 +12,7 @@ const ResponsiveNavBar = () => {
   const hamburgerBottomStyle = isMenuOpen ? '-rotate-45 -translate-y-[9px]' : '';
 
   return (
-    <header className='fixed top-0 left-0 right-0 px-4 py-2 z-50 bg-transparent'>
+    <header className='fixed top-0 left-0 right-0 px-8 py-2 z-50 bg-transparent'>
       <div className='md:hidden'>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
