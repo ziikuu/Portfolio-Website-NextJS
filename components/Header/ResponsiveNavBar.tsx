@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import NavBar from './NavBar'
 import MobileNavBar from './MobileNavBar'
+import Balancer from 'react-wrap-balancer';
 
 const ResponsiveNavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,8 @@ const ResponsiveNavBar = () => {
   const hamburgerBottomStyle = isMenuOpen ? '-rotate-45 -translate-y-[9px]' : '';
 
   return (
-    <header className='fixed top-0 left-0 right-0 px-8 py-2 z-50 bg-transparent'>
+  
+    <header className='fixed top-0 left-0 right-0 px-8 py-2 z-50 bg-transparent max-w-[1440px] mx-auto'>
       <div className='md:hidden'>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
@@ -26,6 +28,7 @@ const ResponsiveNavBar = () => {
       <NavBar openMenu={() => setIsMenuOpen(true)} />
       <MobileNavBar isMenuOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
     </header>
+    
   )
 }
 

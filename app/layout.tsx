@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
 import ResponsiveNavBar from "@/components/Header/ResponsiveNavBar";
+import BgBlur from "@/components/Bg/BgBlur";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-IBM_Plex_Sans",
@@ -31,7 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${ibmPlexSans.variable} ${dmMono.variable} antialiased`}>
       <body className="bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen">
-        <div className="">
+        <BgBlur />
+        <div className=" ">
           <ResponsiveNavBar />
           <main className="">{children}</main>
         </div>
