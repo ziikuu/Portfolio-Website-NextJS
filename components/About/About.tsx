@@ -7,7 +7,7 @@ import Stack from './Stack';
 
 const PlayfairDisplaySC = Playfair_Display_SC({
   subsets: ["latin"],
-  weight: ["700"], 
+  weight: ["900","700","400"], 
 });
 
 function About() {
@@ -18,7 +18,7 @@ function About() {
         {/* Title */}
         <Balancer>
         <div className='flex flex-col justify-center items-center w-full mb-8'>
-          <h1 className={`text-[#151419] text-[clamp(3.8rem,9vw,9rem)] ${PlayfairDisplaySC.className}`}>
+          <h1 className={`text-[#151419] font-bold text-[clamp(3.8rem,9vw,9rem)] ${PlayfairDisplaySC.className}`}>
             About Me
           </h1>
           <div className='bg-[#151419] w-full h-1'></div>
