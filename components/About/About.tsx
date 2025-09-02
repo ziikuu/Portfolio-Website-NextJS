@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Balancer from 'react-wrap-balancer';
 import BgBlur from '../Bg/BgBlur';
 import Stack from './Stack';
+import { typographyScale } from '@/styles/typography'
 
 const PlayfairDisplaySC = Playfair_Display_SC({
   subsets: ["latin"],
@@ -12,8 +13,8 @@ const PlayfairDisplaySC = Playfair_Display_SC({
 
 function About() {
   return (
-    <section id="hero" className='bg-[#D9D9D9] bg-cover bg-no-repeat bg-fixed w-full'>
-      <div className="flex flex-col justify-center items-center min-h-screen p-8 relative z-10">
+    <section id="About" className='bg-[#D9D9D9] bg-cover bg-no-repeat bg-fixed w-full overflow-hidden'>
+      <div id='aboutContainer' className="flex flex-col justify-center items-center min-h-screen p-8 relative z-10 overflow-hidden">
         <BgBlur />
         {/* Title */}
         <Balancer>
@@ -27,7 +28,7 @@ function About() {
         {/* Content */}
         <Balancer className='w-[clamp(305px,50%,800px)]'>
         {/* Description */}
-        <div className='font-[IBM_Plex_Sans] text-[#151419] text-[clamp(0.9rem,1.5vw,1.5rem)] text-justify max-w-3xl'>
+        <div className={`font-[IBM_Plex_Sans] text-[#151419] text-[${typographyScale.base}] text-justify max-w-3xl`}>
           <p className=''>
             I’m a Computer Engineering graduate and aspiring full-stack developer from the Philippines. Skilled in HTML, CSS, React, Nuxt, Next.js, C++, C#, and Python, I enjoy building web apps and automation systems.
           </p>
