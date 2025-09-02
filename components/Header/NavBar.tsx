@@ -1,4 +1,5 @@
 import { NavLinks } from '@/constant/constant'
+import { typographyScale } from '@/styles/typography';
 import Link from 'next/link'
 import { ScriptProps } from 'next/script';
 import React from 'react'
@@ -10,7 +11,7 @@ type NavBarProps = {
 
 const NavBar = ({ openMenu }: NavBarProps) => {
   return (
-    <div id="navContainer" className='sticky top-0 z-1000 flex items-center justify-between font-[DM_Mono] text-lg text-[#151419]'>
+    <div id="navContainer" className={`sticky top-0 z-1000 flex items-center justify-between font-[DM_Mono] text-[${typographyScale.base}] text-[#151419]`}>
       {/* Logo or Brand Name */}
       <div className='text-[#151419]'>
         <Link href='/'><p>Computer Engineer</p></Link>

@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import NavBar from './NavBar'
 import MobileNavBar from './MobileNavBar'
-import Balancer from 'react-wrap-balancer';
+import { typographyScale } from '@/styles/typography';
 
 const ResponsiveNavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ const ResponsiveNavBar = () => {
 
   return (
   
-    <header className='fixed top-0 left-0 right-0 px-8 py-2 z-50 bg-transparent max-w-[1440px] mx-auto'>
+    <header className={`fixed top-0 left-0 right-0 px-8 py-2 z-50 bg-transparent max-w-[1440px] mx-auto text-[${typographyScale.base}]`}>
       <div className='md:hidden'>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
