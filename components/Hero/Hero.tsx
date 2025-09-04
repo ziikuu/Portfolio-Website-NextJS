@@ -13,7 +13,7 @@ const PlayfairDisplaySC = Playfair_Display_SC({
 
 const Hero = () => {
   return (
-    <section id="hero" className="max-w-[1440px] flex flex-col-reverse md:flex-row justify-center items-center min-h-screen p-8 relative z-10">
+    <section id="hero" className="bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed max-w-[1440px] flex flex-col-reverse md:flex-row justify-center items-center min-h-screen p-8 relative z-10">
       <Balancer>
         <div className="hero-text w-[312px] md:w-1/2 flex flex-col items-start justify-center min-w-[312px]">
           {/* Title */}

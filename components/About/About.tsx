@@ -14,9 +14,10 @@ const PlayfairDisplaySC = Playfair_Display_SC({
 
 function About() {
   return (
-    <section id="About" className='bg-[#D9D9D9] bg-cover bg-no-repeat bg-fixed w-full overflow-hidden'>
-      <div id='aboutContainer' className="flex flex-col justify-center items-center min-h-screen p-8 relative z-10 overflow-hidden">
-        <BgBlur />
+    <section id="About" className='relative z-10 w-full overflow-hidden'>
+      <BgBlur />
+      <div id='aboutContainer' className="flex flex-col justify-center items-center min-h-screen p-8  overflow-hidden">
+        
         {/* Title */}
         <Balancer>
         <div className='flex flex-col justify-center items-center w-full mb-8'>
