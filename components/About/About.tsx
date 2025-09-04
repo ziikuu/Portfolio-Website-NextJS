@@ -5,6 +5,7 @@ import Balancer from 'react-wrap-balancer';
 import BgBlur from '../Bg/BgBlur';
 import Stack from './Stack';
 import { typographyScale } from '@/styles/typography'
+import Stack2 from './Stack2';
 
 const PlayfairDisplaySC = Playfair_Display_SC({
   subsets: ["latin"],

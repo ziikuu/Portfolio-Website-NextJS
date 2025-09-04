@@ -2,12 +2,13 @@ import React from 'react'
 import BgBlur from '../Bg/BgBlur'
 import { typographyScale } from '@/styles/typography'
 import Balancer from 'react-wrap-balancer'
+import DockBar from './DockBar'
 
 function Stack() {
   return (
-    <div id="stack" className='flex flex-col justify-center items-center min-h-screen p-8 relative z-10 bg-[#D9D9D9] bg-cover bg-no-repeat bg-fixed w-full'>
+    <div id="stack" className='flex flex-col justify-center items-center min-h-screen relative z-10'>
         <BgBlur />
-        <div id='stackContainer' className='flex flex-row justify-center items-center w-fit p-8 relative z-10 gap-4'>
+        <div id='stackContainer' className='flex flex-row justify-center items-center w-fit p-4 relative z-10 gap-4'>
           <div id='titleContainer' className='text-right font-[playfair_display_sc] font-black text-[#151419] mb-4'>
               <h1 className={`text-[2rem] sm:text-[2.7rem]`}>My<br />Tech<br />Stack</h1>
           </div>
@@ -18,7 +19,7 @@ function Stack() {
             </p>
           </div>
         </div>
-        {/* SVG Stack Image */}
+        <DockBar />
     </div>
   )
 }
