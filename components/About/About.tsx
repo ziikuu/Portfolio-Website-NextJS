@@ -43,12 +43,12 @@ function About() {
           <div className='flex justify-start items-start'>
             <Link href="/Portfolio" className=''>
                 <button className="text-[clamp(0.8rem,1.2vw,1.5rem)] mt-4 p-3 border-2 border-[#151419] bg-[#151419] text-[#D9D9D9] rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95 active:opacity-70 active:transition-all active:duration-75 active:ease-in-out">
-                  <p>Download CV</p>
+                  Download My CV
                 </button>
             </Link>
             <Link href="/About" className='ml-4'>
                 <button className="text-[clamp(0.8rem,1.2vw,1.5rem)] mt-4 p-3 bg-transparent border-2 border-[#151419] text-[#151419] rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95 active:opacity-70 active:transition-all active:duration-75 active:ease-in-out">
-                  <p>My Portfolio</p>
+                  See My Portfolio
                 </button>
             </Link>
           </div>
