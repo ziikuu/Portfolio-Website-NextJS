@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react"
 import BgBlur from "../Bg/BgBlur"
 import { Playfair_Display_SC } from "next/font/google"
 import Content from './Content'
+import { typographyScale } from "@/styles/typography"
 
 interface ProjectProps {
   title: string
@@ -61,7 +62,7 @@ function ProjectCard({ title, description, url, image, techStack, reverse = fals
         </div>
 
         <button
-          className="text-[clamp(0.8rem,1.2vw,1.5rem)] mt-4 p-3 border-2 border-[#151419] bg-[#151419] text-[#D9D9D9] rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95 active:opacity-70 active:transition-all active:duration-75 active:ease-in-out"
+          className={`whitespace-nowrap text-[${typographyScale.small}] px-4 py-2 border-2 border-[#151419] bg-[#151419] text-white rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95`}
           onClick={() => window.open(url, "_blank")}
         >
           View More →
