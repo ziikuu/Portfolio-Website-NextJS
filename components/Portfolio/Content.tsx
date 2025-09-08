@@ -7,31 +7,31 @@ const ProjectAchievements = () => {
       id: 1,
       title: "Sketch",
       description: "Content Design, Marketing",
-      image: "https://pagedone.io/asset/uploads/1707480017.png",
+      image: "/projects/Hydrponics-Hardware.jpg",
       alt: "Project Achievements of Sketch"
     },
     {
       id: 2,
       title: "Figma",
       description: "User Interface Design",
-      image: "https://pagedone.io/asset/uploads/1707480034.png",
+      image: "/projects/CoESS-LinkUp_Hero.png",
       alt: "Project Achievements of Figma"
     },
     {
       id: 3,
       title: "Frame.io",
       description: "User Interface Design",
-      image: "https://pagedone.io/asset/uploads/1707480044.png",
+      image: "/projects/CareerTalks_contacts.png",
       alt: "Project Achievements of Frame.io"
     }
   ]
 
   return (
-    <section className="py-20 relative">
+    <section className="max-lg:hidden pb-20 relative">
       <div className="w-full max-w-2xl lg:max-w-7xl px-6 lg:px-8 mx-auto">
-        <h1 className="font-manrope font-medium text-4xl text-gray-900 mb-10 max-md:text-center">
+        {/*<h1 className="font-manrope font-medium text-4xl text-gray-900 mb-10 max-md:text-center">
           Featured
-        </h1>
+        </h1>*/}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 

@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${ibmPlexSans.variable} ${dmMono.variable} antialiased`}>
       <body className="min-h-screen bg-[#D9D9D9]">
-        <BgBlur />
+        
         <div className=" ">
           <ResponsiveNavBar />
           <main className="">{children}</main>
