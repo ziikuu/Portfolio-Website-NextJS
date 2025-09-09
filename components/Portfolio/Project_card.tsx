@@ -36,7 +36,7 @@ function ProjectCard({ title, description, url, image, techStack, reverse = fals
         <div>
           {/* Project Title */}
           <h3 className="text-h3 font-heading font-bold text-[#151419] mb-2">{title}</h3>
-          {/* Project Link */}
+          {/* Project Link 
           <a
             href={url}
             target="_blank"
@@ -45,6 +45,7 @@ function ProjectCard({ title, description, url, image, techStack, reverse = fals
           >
             {url} <ExternalLink className="w-4 h-4" />
           </a>
+          */}
         </div>
         {/* Project Description */}
         <p className="text-[#151419] leading-relaxed font-body text-base-custom">{description}</p>
@@ -116,7 +117,7 @@ export default function PortfolioSection() {
           </h1>
           <div className='bg-[#151419] w-full h-1'></div>
         </div>
-          <p className="text-[#151419]/70 font-body text-large max-w-2xl mx-auto">
+          <p className="text-[#151419]/70 font-[IBM_Plex_Sans] text-large max-w-2xl mx-auto">
             Welcome to my portfolio, where innovation meets design. Explore my journey as a Computer Engineer and discover the projects that showcase my commitment to excellence.
           </p>
         </div>

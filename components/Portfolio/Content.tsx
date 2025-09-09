@@ -5,24 +5,24 @@ const ProjectAchievements = () => {
   const projects = [
     {
       id: 1,
-      title: "Sketch",
-      description: "Content Design, Marketing",
+      title: "Smart Hydroponics System",
+      description: "IoT, Machine Learning",
       image: "/projects/Hydrponics-Hardware.jpg",
-      alt: "Project Achievements of Sketch"
+      alt: "Smart Hydroponics IoT System"
     },
     {
       id: 2,
-      title: "Figma",
-      description: "User Interface Design",
+      title: "Job Application Platform", 
+      description: "Web Development, Leadership",
       image: "/projects/CoESS-LinkUp_Hero.png",
-      alt: "Project Achievements of Figma"
+      alt: "Job Application Platform Interface"
     },
     {
       id: 3,
-      title: "Frame.io",
-      description: "User Interface Design",
+      title: "Contact Tracking System",
+      description: "Mobile App, Internship",
       image: "/projects/CareerTalks_contacts.png",
-      alt: "Project Achievements of Frame.io"
+      alt: "Contact Tracking Mobile Application"
     }
   ]
 
