@@ -16,26 +16,29 @@ function About() {
   return (
     <section id="About" className='relative z-10 w-full overflow-hidden'>
       <BgBlur />
-      <div id='aboutContainer' className="flex flex-col justify-center items-center min-h-screen p-8  overflow-hidden">
-        
+      
+      <div id='aboutContainer' className="flex justify-center items-center min-h-screen overflow-hidden">
+        <div id="" className="flex flex-col justify-center items-center p-6 md:p-12 bg-[#F9FAF9] mx-2 md:mx-4 rounded-2xl">
         {/* Title */}
-        <Balancer>
+        
         <div className='flex flex-col justify-center items-center w-full mb-8'>
           <h1 className={`text-[#151419] font-bold text-[clamp(3.8rem,9vw,9rem)] ${PlayfairDisplaySC.className}`}>
             About Me
           </h1>
           <div className='bg-[#151419] w-full h-1'></div>
         </div>
-        </Balancer>
+        
         {/* Content */}
-        <Balancer className='w-[clamp(305px,50%,800px)]'>
+        
         {/* Description */}
-        <div className={`font-[IBM_Plex_Sans] text-[#151419] text-[${typographyScale.base}] text-justify max-w-3xl`}>
+        <div className={`font-[IBM_Plex_Sans] text-[#151419] text-[${typographyScale.base}] text-justify max-w-3xl overflow-auto`}>
           <p className=''>
-            I’m a Computer Engineering graduate and aspiring full-stack developer from the Philippines. Skilled in HTML, CSS, React, Nuxt, Next.js, C++, C#, and Python, I enjoy building web apps and automation systems.
+            <Balancer className='w-[clamp(305px,100%,800px)]'>I’m a Computer Engineering graduate and aspiring full-stack developer from the Philippines. Skilled in HTML, CSS, React, Nuxt, Next.js, C++, C#, and Python, I enjoy building web apps and automation systems.
+            </Balancer>
           </p>
           <p className='pt-4'>
-            I’ve led a machine learning–based research project that automated crop cultivation for farmers, and I graduated cum laude from the University of the East. Guided by creativity and integrity, I aim to grow into a senior developer and automation engineer who builds solutions that make life and work easier.
+            <Balancer className='w-[clamp(305px,100%,800px)]'>I’ve led a machine learning–based research project that automated crop cultivation for farmers, and I graduated cum laude from the University of the East. Guided by creativity and integrity, I aim to grow into a senior developer and automation engineer who builds solutions that make life and work easier.
+            </Balancer>
           </p>
         </div>
         {/* Buttons */}
@@ -53,7 +56,8 @@ function About() {
             </Link>
           </div>
         </div>
-        </Balancer>
+        
+      </div>
       </div>
       <Stack />
     </section>
