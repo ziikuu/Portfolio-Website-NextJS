@@ -104,15 +104,13 @@ export default function PortfolioSection() {
   ]
 
   return (
-    <section className="relative min-h-screen py-20">
-      
-      <div id="" className="absolute inset-0 bg-[#F9FAF9] my-10 rounded-2xl" />
-      
-      <div className="relative z-10 max-w-7xl mx-auto px-8">
+    <section className="relative min-h-screen py-5 md:py-10 flex justify-center items-center">
+
+      <div className="relative z-10 md:max-w-7xl bg-[#F9FAF9] p-6 md:p-12 rounded-2xl shadow-2xl">
         {/* Header */}
         <div className="text-center mb-16">
           <div className='flex flex-col justify-center items-center w-full mb-8'>
-          <h1 className={`text-[#151419] font-bold text-[clamp(3.8rem,9vw,9rem)] ${PlayfairDisplaySC.className}`}>
+          <h1 className={`text-[#151419] font-bold text-[clamp(3.2rem,9vw,9rem)] ${PlayfairDisplaySC.className}`}>
             Portfolio
           </h1>
           <div className='bg-[#151419] w-full h-1'></div>

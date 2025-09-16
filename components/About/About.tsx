@@ -18,7 +18,7 @@ function About() {
       <BgBlur />
       
       <div id='aboutContainer' className="flex justify-center items-center min-h-screen overflow-hidden">
-        <div id="" className="flex flex-col justify-center items-center p-6 md:p-12 bg-[#F9FAF9] mx-2 md:mx-4 rounded-2xl">
+        <div id="" className="flex flex-col justify-center items-center bg-[#F9FAF9] p-6 md:p-12 mx-2 md:mx-4 rounded-2xl shadow-2xl">
         {/* Title */}
         
         <div className='flex flex-col justify-center items-center w-full mb-8'>
