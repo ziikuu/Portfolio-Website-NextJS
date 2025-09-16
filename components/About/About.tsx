@@ -49,7 +49,7 @@ function About() {
                   Download My CV
                 </button>
             </Link>
-            <Link href="/About" className='ml-4'>
+            <Link href="/Portfolio" className='ml-4'>
                 <button className="text-[clamp(0.8rem,1.2vw,1.5rem)] mt-4 p-3 bg-transparent border-2 border-[#151419] text-[#151419] rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95 active:opacity-70 active:transition-all active:duration-75 active:ease-in-out">
                   See My Portfolio
                 </button>
@@ -59,7 +59,7 @@ function About() {
         
       </div>
       </div>
-      <Stack />
+      
     </section>
   )
 }

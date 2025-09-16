@@ -13,7 +13,7 @@ function Contact() {
       <BgBlur />
       <div className='container mx-auto px-4 grid grid-cols-1 {md:grid-cols-2} gap-8'>
         {/*<Card_white />*/}
-        <Card_black />
+        <Card_white />
         {/*
         <div id='ContactLogoContainer' className="max-md:hidden flex items-center justify-center max-w-3xl max-h-96 min-h-fit h-80 mx-auto rounded-3xl shadow-2xl bg-gradient-to-br from-[#151419] to-[#606063]">
           <Image
