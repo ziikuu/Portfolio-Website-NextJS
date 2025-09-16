@@ -3,7 +3,6 @@ import { Mail } from 'lucide-react';
 import { SiLinkedin } from 'react-icons/si';
 import { Playfair_Display_SC } from 'next/font/google';
 import Balancer from 'react-wrap-balancer';
-import Hirebtn_black from './Hirebtn_black';
 import { GmailComposeURL, LinkedInURL } from '@/constant/constant';
 
 const PlayfairDisplaySC = Playfair_Display_SC({
@@ -34,7 +33,10 @@ const Card_white = () => {
           <span>www.linkedin.com/in/angelo-bringula-7499662a9</span>
         </div>
       </div>
-      <Hirebtn_black />
+      {/*Hire Button*/}
+      <a href={GmailComposeURL} target='_blank' rel="noopener noreferrer">
+        <button className='bg-white/20 text-[#F9FAF9] w-full rounded-full p-2 whitespace-nowrap px-4 py-2 hover:transform hover:-translate-y-0.5 hover:shadow-lg hover:cursor-pointer transition-all duration-300 ease-in-out active:scale-95'>Hire Me!</button>
+      </a>
     </div>
   )
 }

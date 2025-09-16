@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Playfair_Display_SC } from 'next/font/google'
 import Balancer from 'react-wrap-balancer';
-import BgBlur from '../Bg/BgBlur';
 import { typographyScale } from '@/styles/typography'
 
 const PlayfairDisplaySC = Playfair_Display_SC({
