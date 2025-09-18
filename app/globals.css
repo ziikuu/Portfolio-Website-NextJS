@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 @import '../styles/typography.css';
 
@@ -19,4 +20,9 @@
   .text-base { font-size: clamp(1rem, 1.2vw, 1.125rem); }
   .text-small { font-size: clamp(0.875rem, 1vw, 1rem); }
   .text-xs { font-size: clamp(0.75rem, 0.8vw, 0.875rem); }
+}
+
+/* Add smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
 }

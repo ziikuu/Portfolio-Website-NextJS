@@ -8,21 +8,24 @@ const ProjectAchievements = () => {
       title: "Smart Hydroponics System",
       description: "IoT, Machine Learning",
       image: "/projects/Hydrponics-Hardware.jpg",
-      alt: "Smart Hydroponics IoT System"
+      alt: "Smart Hydroponics IoT System",
+      link: "#hydroponics",
     },
     {
       id: 2,
       title: "Job Application Platform", 
       description: "Web Development, Leadership",
       image: "/projects/CoESS-LinkUp_Hero.png",
-      alt: "Job Application Platform Interface"
+      alt: "Job Application Platform Interface",
+      link: "#job-application",
     },
     {
       id: 3,
       title: "Contact Tracking System",
       description: "Mobile App, Internship",
       image: "/projects/CareerTalks_contacts.png",
-      alt: "Contact Tracking Mobile Application"
+      alt: "Contact Tracking Mobile Application",
+      link: "#contact-tracker",
     }
   ]
 
@@ -58,22 +61,28 @@ const ProjectAchievements = () => {
                   </p>
                 </div>
                 <button
-                  className="border border-black py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-black"
+                  className="border border-black py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-black hover:cursor-pointer"
                   aria-label={`View ${project.title} project`}
+                  onClick={() => {
+                    const element = document.getElementById(project.link.slice(1));
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                  }}
                 >
-                  <svg 
+                  <svg
                     className="stroke-black transition-all duration-300 group-hover:stroke-white"
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="17" 
-                    height="16" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="16"
                     viewBox="0 0 17 16"
                     fill="none"
                   >
                     <path
                       d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
-                      stroke="" 
-                      strokeWidth="1.6" 
-                      strokeLinecap="round" 
+                      stroke=""
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </button>

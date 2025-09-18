@@ -14,6 +14,7 @@ interface ProjectProps {
   techStack: string[]
   reverse?: boolean
   imagePosition?: string
+  id: string
 }
 
 const PlayfairDisplaySC = Playfair_Display_SC({
@@ -21,9 +22,9 @@ const PlayfairDisplaySC = Playfair_Display_SC({
   weight: ["900","700","400"], 
 });
 
-function ProjectCard({ title, description, url, image, techStack, reverse = false, imagePosition }: ProjectProps) {
+function ProjectCard({ id, title, description, url, image, techStack, reverse = false, imagePosition }: ProjectProps) {
   return (
-    <div className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 mb-16`}>
+    <div id={id} className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 mb-16`}>
       {/* Project Image */}
       <div className="flex-1">
         <Card className="overflow-hidden bg-white border-gray-200 shadow-lg aspect-video">
@@ -83,6 +84,7 @@ export default function PortfolioSection() {
       image: "/projects/Hydrponics-Hardware.jpg",
       techStack: ["React", "Arduino Cloud", "C++", "TensorFlow", "Python", "Flask", "Firebase", "ESP32", "Docker"],
       imagePosition: "object-center",
+      id: "hydroponics",
     },
     {
       title: "Job Application Platform",
@@ -92,6 +94,7 @@ export default function PortfolioSection() {
       image: "/projects/CoESS-LinkUp_Hero.png",
       techStack: ["Nuxt.js", "Vue.js", "Git", "GitHub", "Vercel"],
       reverse: true,
+      id: "job-application",
     },
     {
       title: "Partner School Contact Tracking System",
@@ -100,6 +103,7 @@ export default function PortfolioSection() {
         "Developed during internship at University of the East to increase marketing outreach by 20%. Built mobile application to efficiently track contact details of 160+ partner schools, streamlining communication processes.",
       image: "/projects/CareerTalks_contacts.png",
       techStack: ["React Native", "Firebase", "JavaScript", "Mobile Development"],
+      id: "contact-tracker",
     },
   ]
 
