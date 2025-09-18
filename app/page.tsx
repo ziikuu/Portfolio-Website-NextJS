@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <div className='flex justify-center'>
+    <div className='flex flex-col justify-center'>
     <Hero />
     </div>
   )
