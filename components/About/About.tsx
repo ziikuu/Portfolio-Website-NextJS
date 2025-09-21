@@ -1,16 +1,8 @@
 import React from 'react'
-import { Playfair_Display_SC } from 'next/font/google'
 import Link from 'next/link'
 import Balancer from 'react-wrap-balancer';
 import BgBlur from '../Bg/BgBlur';
-import Stack from './Stack';
 import { typographyScale } from '@/styles/typography'
-import Stack2 from './Stack2';
-
-const PlayfairDisplaySC = Playfair_Display_SC({
-  subsets: ["latin"],
-  weight: ["900","700","400"], 
-});
 
 function About() {
   return (
@@ -22,7 +14,7 @@ function About() {
         {/* Title */}
         
         <div className='flex flex-col justify-center items-center w-full mb-8'>
-          <h1 className={`text-[#151419] font-bold text-[clamp(3.8rem,9vw,9rem)] ${PlayfairDisplaySC.className}`}>
+          <h1 className={`font-[Playfair_Display_SC] font-bold text-[#151419] text-[clamp(3.8rem,9vw,9rem)]`}>
             About Me
           </h1>
           <div className='bg-[#151419] w-full h-1'></div>

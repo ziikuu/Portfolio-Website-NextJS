@@ -13,7 +13,7 @@ const PlayfairDisplaySC = Playfair_Display_SC({
 const Card_white = () => {
   return (
     <div id='ContactCardContainer' className={`bg-gradient-to-br from-[#F9FAF9] to-white/20 text-[#151419] max-w-3xl max-h-96 min-h-fit h-80 mx-auto rounded-3xl p-8 lg:p-12 shadow-2xl space-y-8`}>
-      <h2 className={`${PlayfairDisplaySC.className}`}>Let’s Work Together!</h2>
+      <h2 className="font-[Playfair_Display_SC]">Let’s Work Together!</h2>
       <p className='font-sans'><Balancer>I’m open to freelance projects, collaborations, and job opportunities. <br />Send me a message, I’ll get back to you soon!</Balancer></p>
       <div id='ContactsContainer' className='space-y-6'>
         <div id='ContactLink-container' className='flex items-center gap-4'>

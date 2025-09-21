@@ -1,15 +1,8 @@
 import React from 'react'
-import BgBlur from '../Bg/BgBlur'
 import Balancer from 'react-wrap-balancer'
-import { Playfair_Display_SC } from 'next/font/google'
-import Content from './Content'
-import Content_v2 from './Content_v2'
 import Project_card from '../Portfolio/Project_card'
 
-const PlayfairDisplaySC = Playfair_Display_SC({
-  subsets: ["latin"],
-  weight: ["900","700","400"], 
-});
+
 
 function Portfolio() {
   return (

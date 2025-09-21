@@ -1,14 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Playfair_Display_SC } from 'next/font/google'
 import Balancer from 'react-wrap-balancer';
 import { typographyScale } from '@/styles/typography'
-
-const PlayfairDisplaySC = Playfair_Display_SC({
-  subsets: ["latin"],
-  weight: ["700"], 
-});
 
 const Hero = () => {
   return (
@@ -18,7 +12,7 @@ const Hero = () => {
         <div className="hero-text w-[312px] md:w-1/2 flex flex-col items-start justify-center min-w-[312px]">
           {/* Title */}
           <div className="flex w-full">
-            <h1 id="name" className={`${PlayfairDisplaySC.className} text-[#151419] text-[${typographyScale.hero}] leading-[1.1] m-auto`}>
+            <h1 id="name" className={`font-[Playfair_Display_SC] font-bold text-[#151419] text-[${typographyScale.hero}] leading-[1.1] m-auto`}>
               Angelo Bringula
             </h1>
           </div>

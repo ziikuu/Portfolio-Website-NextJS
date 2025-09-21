@@ -1,5 +1,4 @@
 import React from 'react'
-
 import BgBlur from '../Bg/BgBlur';
 import Image from 'next/image';
 import Card_black from './Card_black';

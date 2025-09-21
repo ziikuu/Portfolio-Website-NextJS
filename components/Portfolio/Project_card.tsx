@@ -1,8 +1,6 @@
 "use client"
 import { Card } from "@/components/ui/card"
 import { ExternalLink } from "lucide-react"
-import BgBlur from "../Bg/BgBlur"
-import { Playfair_Display_SC } from "next/font/google"
 import Content from './Content'
 import { typographyScale } from "@/styles/typography"
 
@@ -16,11 +14,6 @@ interface ProjectProps {
   imagePosition?: string
   id: string
 }
-
-const PlayfairDisplaySC = Playfair_Display_SC({
-  subsets: ["latin"],
-  weight: ["900","700","400"], 
-});
 
 function ProjectCard({ id, title, description, url, image, techStack, reverse = false, imagePosition }: ProjectProps) {
   return (
@@ -114,7 +107,7 @@ export default function PortfolioSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className='flex flex-col justify-center items-center w-full mb-8'>
-          <h1 className={`text-[#151419] font-bold text-[clamp(3.2rem,9vw,9rem)] ${PlayfairDisplaySC.className}`}>
+          <h1 className={`font-[Playfair_Display_SC] text-[#151419] font-bold text-[clamp(3.2rem,9vw,9rem)]`}>
             Portfolio
           </h1>
           <div className='bg-[#151419] w-full h-1'></div>
