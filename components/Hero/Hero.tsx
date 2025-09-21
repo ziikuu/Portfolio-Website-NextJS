@@ -8,18 +8,18 @@ const Hero = () => {
   return (
     <section id="hero" className="bg-[url('/bg/AU-FG-Texture7-8K.jpg')] bg-cover bg-no-repeat bg-fixed w-screen">
       <div className="mx-auto max-w-[1440px] flex flex-col-reverse md:flex-row justify-center items-center min-h-screen p-8 relative z-10">
-      <Balancer>
+      
         <div className="hero-text w-[312px] md:w-1/2 flex flex-col items-start justify-center min-w-[312px]">
           {/* Title */}
           <div className="flex w-full">
             <h1 id="name" className={`font-[Playfair_Display_SC] font-bold text-[#151419] text-[${typographyScale.hero}] leading-[1.1] m-auto`}>
-              Angelo Bringula
+              <Balancer>Angelo Bringula</Balancer>
             </h1>
           </div>
           {/* Subtitle */}
           <div className="flex flex-col items-start w-full">
             <p className={`text-[#151419] text-[${typographyScale.base}] text-justify font-[DM_Mono] leading-relaxed max-w-prose`}>
-              I'm a computer engineering graduate from the Philippines, passionate about becoming a software or web developer.
+              <Balancer>I'm a computer engineering graduate from the Philippines, passionate about becoming a software or web developer.</Balancer>
             </p>
             {/* Buttons */}
             <div className='inline-flex mt-4 gap-4'>
@@ -36,7 +36,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        </Balancer>
+        
 
         {/* Image Content */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
