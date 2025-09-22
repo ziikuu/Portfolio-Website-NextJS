@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Subtitle */}
           <div className="flex flex-col items-start w-full">
             <p className={`text-[#151419] text-[${typographyScale.base}] text-justify font-[DM_Mono] leading-relaxed max-w-prose`}>
-              <Balancer>I'm a computer engineering graduate from the Philippines, passionate about becoming a software or web developer.</Balancer>
+              <Balancer>I&apos;m a computer engineering graduate from the Philippines, passionate about becoming a software or web developer.</Balancer>
             </p>
             {/* Buttons */}
             <div className='inline-flex mt-4 gap-4'>

@@ -1,14 +1,8 @@
 import React from 'react'
 import { Mail } from 'lucide-react';
 import { SiLinkedin } from 'react-icons/si';
-import { Playfair_Display_SC } from 'next/font/google';
 import Balancer from 'react-wrap-balancer';
 import { GmailComposeURL, LinkedInURL } from '@/constant/constant';
-
-const PlayfairDisplaySC = Playfair_Display_SC({
-  subsets: ["latin"],
-  weight: ["400"], 
-});
 
 const Card_white = () => {
   return (

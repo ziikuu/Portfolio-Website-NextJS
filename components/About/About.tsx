@@ -25,11 +25,11 @@ function About() {
         {/* Description */}
         <div className={`font-[IBM_Plex_Sans] text-[#151419] text-[${typographyScale.base}] text-justify max-w-3xl overflow-auto`}>
           <p className=''>
-            <Balancer className='w-[clamp(305px,100%,800px)]'>I’m a Computer Engineering graduate and aspiring full-stack developer from the Philippines. Skilled in HTML, CSS, React, Nuxt, Next.js, C++, C#, and Python, I enjoy building web apps and automation systems.
+            <Balancer className='w-[clamp(305px,100%,800px)]'>I&apos;m a Computer Engineering graduate and aspiring full-stack developer from the Philippines. Skilled in HTML, CSS, React, Nuxt, Next.js, C++, C#, and Python, I enjoy building web apps and automation systems.
             </Balancer>
           </p>
           <p className='pt-4'>
-            <Balancer className='w-[clamp(305px,100%,800px)]'>I’ve led a machine learning–based research project that automated crop cultivation for farmers, and I graduated cum laude from the University of the East. Guided by creativity and integrity, I aim to grow into a senior developer and automation engineer who builds solutions that make life and work easier.
+            <Balancer className='w-[clamp(305px,100%,800px)]'>I&apos;ve led a machine learning–based research project that automated crop cultivation for farmers, and I graduated cum laude from the University of the East. Guided by creativity and integrity, I aim to grow into a senior developer and automation engineer who builds solutions that make life and work easier.
             </Balancer>
           </p>
         </div>
