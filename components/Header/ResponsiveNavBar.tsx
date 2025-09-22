@@ -25,7 +25,7 @@ const ResponsiveNavBar = () => {
           <span className={`h-[3px] w-8 bg-[#151419] rounded-2xl transition-all duration-300 origin-center ${hamburgerBottomStyle}`}></span>
         </button>
       </div>
-      <NavBar openMenu={() => setIsMenuOpen(true)} />
+      <NavBar />
       <MobileNavBar isMenuOpen={isMenuOpen} closeMenu={() => setIsMenuOpen(false)} />
     </header>
     
