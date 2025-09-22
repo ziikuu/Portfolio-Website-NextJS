@@ -1,6 +1,6 @@
 "use client"
 import { Card } from "@/components/ui/card"
-import { ExternalLink } from "lucide-react"
+import Image from "next/image"
 import Content from './Content'
 import { typographyScale } from "@/styles/typography"
 
@@ -21,7 +21,7 @@ function ProjectCard({ id, title, description, url, image, techStack, reverse = 
       {/* Project Image */}
       <div className="flex-1">
         <Card className="overflow-hidden bg-white border-gray-200 shadow-lg aspect-video">
-          <img src={image || "/placeholder.svg"} alt={title} className={`w-full h-full object-cover ${imagePosition || 'object-top'}`} />
+          <Image width={800} height={600} src={image || "/placeholder.svg"} alt={title} className={`w-full h-full object-cover ${imagePosition || 'object-top'}`} />
         </Card>
       </div>
 

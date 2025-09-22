@@ -3,11 +3,7 @@ import { typographyScale } from '@/styles/typography';
 import Link from 'next/link'
 import React from 'react'
 
-type NavBarProps = {
-  openMenu: () => void;
-}
-
-const NavBar = ({ openMenu }: NavBarProps) => {
+const NavBar = () => {
   return (
     <div id="navContainer" className={`sticky top-0 z-1000 flex items-center justify-between font-[DM_Mono] text-[${typographyScale.base}] text-[#151419]`}>
       {/* Logo or Brand Name */}

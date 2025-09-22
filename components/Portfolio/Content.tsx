@@ -44,11 +44,13 @@ const ProjectAchievements = () => {
               }`}
             >
               <div className="block relative w-full h-[300px] overflow-hidden">
-                <img 
+                <Image 
                   className="rounded-3xl object-cover w-full h-full" 
                   src={project.image} 
                   alt={project.alt}
                   loading={index === 0 ? "eager" : "lazy"}
+                  width={800}
+                  height={800}
                 />
               </div>
               <div className="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0">
