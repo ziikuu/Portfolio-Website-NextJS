@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card"
 import Image from "next/image"
 import Content from './Content'
 import { typographyScale } from "@/styles/typography"
+import { reverse } from "dns"
 
 interface ProjectProps {
   title: string
@@ -80,13 +81,23 @@ export default function PortfolioSection() {
       id: "hydroponics",
     },
     {
+      title: "Avelo Jewelry Repair Shop - Portfolio Website",
+      url: "https://github.com/your-username/smart-hydroponics",
+      description:
+        "I designed and developed a responsive portfolio website to showcase Avelo Jewelry Workshop’s custom creations, making it easier for clients to browse designs and find inspiration for personalized orders. The project highlighted the craftsmanship of the brand while boosting engagement by providing an accessible digital showcase for potential customers.",
+      image: "/projects/Avelo-Jewelry-Portfolio.webp",
+      techStack: ["Next.js", "Tailwind CSS", "Git", "GitHub", "Vercel"],
+      imagePosition: "object-center",
+      reverse: true,
+      id: "avelo-jewelry",
+    },
+    {
       title: "Job Application Platform",
       url: "https://your-job-platform.vercel.app",
       description:
         "Project Lead for a full-stack job application platform. Managed cross-functional team through complete development lifecycle, integrating front-end and back-end systems with enhanced performance and usability.",
       image: "/projects/CoESS-LinkUp_Hero.png",
       techStack: ["Nuxt.js", "Vue.js", "Git", "GitHub", "Vercel"],
-      reverse: true,
       id: "job-application",
     },
     {
@@ -96,6 +107,7 @@ export default function PortfolioSection() {
         "Developed during internship at University of the East to increase marketing outreach by 20%. Built mobile application to efficiently track contact details of 160+ partner schools, streamlining communication processes.",
       image: "/projects/CareerTalks_contacts.png",
       techStack: ["React Native", "Firebase", "JavaScript", "Mobile Development"],
+      reverse: true,
       id: "contact-tracker",
     },
   ]

@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
+{/* This is the featured section in /Portfolio page */}
+
 const ProjectAchievements = () => {
   const projects = [
     {
