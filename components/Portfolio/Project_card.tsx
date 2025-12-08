@@ -1,10 +1,9 @@
 "use client"
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
-import Content from './Content'
+import Featured from './Featured'
 import { typographyScale } from "@/styles/typography"
 import { projects } from "@/constant/portfolioProjects"
-import { reverse } from "dns"
 
 interface ProjectProps {
   title: string
@@ -88,7 +87,7 @@ export default function PortfolioSection() {
           </p>
         </div>
 
-        <Content />
+        <Featured />
 
         {/* Projects */}
         <div className="space-y-20">

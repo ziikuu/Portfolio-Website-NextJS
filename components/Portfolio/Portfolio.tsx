@@ -9,13 +9,6 @@ function Portfolio() {
     <section id="Portfolio" className='relative z-10 w-full'>
     
       <div id='portfolioContainer' className="flex flex-col justify-center items-center min-h-screen p-8">
-        {/* Title */}
-        <Balancer>
-        
-        </Balancer>
-        {/* Content */}
-        {/*<Content />*/}
-        {/*<Content_v2 />*/}
         <Project_card />
       </div>
     </section>
