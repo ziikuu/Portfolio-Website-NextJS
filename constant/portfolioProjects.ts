@@ -34,7 +34,7 @@ export const projects = [
       url: "https://github.com/your-username/contact-tracker",
       description:
         "Developed during internship at University of the East to increase marketing outreach by 20%. Built mobile application to efficiently track contact details of 160+ partner schools, streamlining communication processes.",
-      image: "/projects/CareerTalks_contacts.png",
+      image: "/projects/CareerTalks_contacts.webp",
       techStack: ["React Native", "Firebase", "JavaScript", "Mobile Development"],
       reverse: true,
       id: "contact-tracker",

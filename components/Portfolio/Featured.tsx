@@ -25,7 +25,7 @@ const ProjectAchievements = () => {
       id: 3,
       title: "Contact Tracking System",
       description: "Mobile App, Internship",
-      image: "/projects/CareerTalks_contacts.png",
+      image: "/projects/CareerTalks_contacts.webp",
       alt: "Contact Tracking Mobile Application",
       link: "#contact-tracker",
     }
