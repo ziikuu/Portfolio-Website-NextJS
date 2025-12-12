@@ -4,6 +4,7 @@ import Image from "next/image"
 import Featured from './Featured'
 import { typographyScale } from "@/styles/typography"
 import { projects } from "@/constant/portfolioProjects"
+import Link from "next/link"
 
 interface ProjectProps {
   title: string
@@ -56,13 +57,13 @@ function ProjectCard({ id, title, description, url, image, techStack, reverse = 
             </span>
           ))}
         </div>
-
-        <button
-          className={`whitespace-nowrap text-[${typographyScale.small}] px-4 py-2 border-2 border-[#151419] bg-[#151419] text-white rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95`}
-          onClick={() => window.open(url, "_blank")}
-        >
-          View More →
-        </button>
+        <Link href={"/Portfolio/"+id}>
+          <button
+            className={`whitespace-nowrap text-[${typographyScale.small}] px-4 py-2 border-2 border-[#151419] bg-[#151419] text-white rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95`}
+          >
+            View More →
+          </button>
+        </Link>
       </div>
     </div>
   )
