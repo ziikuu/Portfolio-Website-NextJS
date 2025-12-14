@@ -1,7 +1,7 @@
 {/* Metadata of each project */}
 export const projects = [
     {
-      title: "Smart Hydroponics: IoT-Powered Lettuce Cultivation",
+      title: "Smart Hydroponics System",
       url: "https://github.com/ziikuu/Flask-React-Lettuce-Website",
       description:
         "Led development of an IoT-powered hydroponics system with ML-driven predictive analytics. Improved lettuce yield by 10% and reduced manual labor by 77 hours per week through automated monitoring and real-time data insights.",
@@ -44,6 +44,7 @@ export const projects = [
         "Project Lead for a full-stack job application platform. Managed cross-functional team through complete development lifecycle, integrating front-end and back-end systems with enhanced performance and usability.",
       image: "/projects/CoESS-LinkUp_Hero.png",
       techStack: ["Nuxt.js", "Vue.js", "Git", "GitHub", "Vercel"],
+      imagePosition: "object-center",
       id: "job-application",
       //Case Study Metadata
       result: "Project Lead, managed cross-functional team through full development lifecycle.",
@@ -91,8 +92,9 @@ export const projects = [
   imagePosition?: string;
   id: string;
   reverse?: boolean;
-  team?: Array<{        // Add this
-    name: string;
-    role: string;
-  }>;
+  team?: 
+    Array<{        // Add this
+      name: string;
+      role: string;
+    }>;
 }
