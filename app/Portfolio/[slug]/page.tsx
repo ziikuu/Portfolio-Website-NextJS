@@ -2,6 +2,8 @@ import { projects } from "@/constant/portfolioProjects"
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
+import { typographyScale } from "@/styles/typography";
 
 {/* Data fetch function */}
 export async function getProjectBySlug(slug: string) {
@@ -24,16 +26,36 @@ export async function generateStaticParams() {
     return projects.map((project) => ({slug: project.id}))
 }
 
+{/* Main */}
 export default async function ProjectsPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const project = await getProjectBySlug(slug);
     if (!project) {
         notFound();
     }
+    {/* Link to Next Project/Case Study Function */}
+    const index = projects.findIndex((p)=>p.id===slug);
+    var next = projects[index + 1];
+    if (index===projects.length-1) {
+      next = projects[0]
+    }
 
     return (
     <article id="pageContainerr" className="flex flex-col justify-center items-center min-h-screen md:p-8 px-4 py-8">
-      <section id="sectionContainer" className="relative min-h-screen py-5 md:py-10 flex justify-center items-center">
+      <section id="sectionContainer" className="relative min-h-screen py-5 md:py-10 flex justify-center items-center flex-col gap-4">
+        <div className='flex justify-between mt-4 w-full'>
+          <Link href="/Portfolio">
+            <button className={`whitespace-nowrap text-[${typographyScale.xs}] px-4 py-2 bg-transparent border-2 border-[#151419] text-[#151419] rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg hover:cursor-pointer transition-all duration-300 ease-in-out active:scale-95`}>
+              Go Back
+            </button>
+          </Link>
+          <Link href={`/Portfolio/${next.id}`}>
+            <button className={`whitespace-nowrap text-[${typographyScale.xs}] px-4 py-2 border-2 border-[#151419] bg-[#151419] text-white rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg hover:cursor-pointer transition-all duration-300 ease-in-out active:scale-95`}>
+              {next.id} →
+            </button>
+          </Link>
+          
+        </div>
         <div id="backgroundCard" className="relative z-10 md:max-w-7xl bg-[#F9FAF9] md:p-12 rounded-2xl shadow-2xl">
           {/* Project image */}
           <div className="relative w-full mb-8 rounded-lg overflow-hidden" style={{aspectRatio: "16/9"}}>

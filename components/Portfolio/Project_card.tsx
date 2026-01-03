@@ -59,7 +59,7 @@ function ProjectCard({ id, title, description, url, image, techStack, reverse = 
         </div>
         <Link href={"/Portfolio/"+id}>
           <button
-            className={`whitespace-nowrap text-[${typographyScale.small}] px-4 py-2 border-2 border-[#151419] bg-[#151419] text-white rounded-full font-[DM_Mono] hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95`}
+            className={`whitespace-nowrap text-[${typographyScale.small}] px-4 py-2 border-2 border-[#151419] bg-[#151419] text-white rounded-full font-[DM_Mono] hover:cursor-pointer hover:transform hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95`}
           >
             View More →
           </button>
